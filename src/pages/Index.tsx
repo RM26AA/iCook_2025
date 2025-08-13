@@ -1,11 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Header } from "@/components/Header";
+import { RecipeSearch } from "@/components/RecipeSearch";
+import { RandomRecipe } from "@/components/RandomRecipe";
+import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-gradient-to-br from-background via-background to-accent/5">
+      <div className="container mx-auto px-4">
+        <Header />
+        
+        <div className="space-y-16 pb-16">
+          {/* Recipe Search Section */}
+          <section className="animate-slide-up">
+            <RecipeSearch />
+          </section>
+          
+          {/* Separator */}
+          <div className="flex items-center justify-center">
+            <Separator className="w-24 bg-gradient-to-r from-transparent via-border to-transparent" />
+          </div>
+          
+          {/* Random Recipe Section */}
+          <section className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
+            <RandomRecipe />
+          </section>
+        </div>
       </div>
     </div>
   );
