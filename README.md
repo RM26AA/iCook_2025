@@ -75,30 +75,9 @@ The backend sends a structured prompt to Gemini and formats the AI’s JSON resp
 
 MIT License — free to use and modify.
 
-❤️ Credits
+## ❤️ Credits
 
 Built with ☕ and 🍳 by R.Maunick
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # Lovable project
 
