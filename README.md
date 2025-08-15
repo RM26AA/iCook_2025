@@ -1,4 +1,106 @@
-# Welcome to your Lovable project
+# 🍳 iCook — AI-Powered Recipe App
+
+iCook is a modern, minimal recipe web application that uses the **Gemini API** to instantly generate delicious recipes.  
+Search for any dish or let iCook surprise you with a random recipe based on your chosen meal type and cuisine.
+
+---
+
+## ✨ Features
+
+- 🔍 **Search Recipes** — Enter any meal name and get a structured recipe with description, prep time, cook time, ingredients, and instructions.
+- 🎲 **Random Meal Generator** — Pick **Breakfast / Lunch / Dinner** + one of 30+ cuisines for an instant AI-generated recipe.
+- 📋 **Copy & Download** — Copy recipes to your clipboard or save them as `.txt` files.
+- 🎨 **Beautiful UI** — Clean white-and-red gradient theme with smooth animations and icons.
+- 🔒 **Secure Backend** — API key is safely stored on the server (never exposed to the browser).
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** React + Vite + TailwindCSS + Framer Motion + lucide-react icons
+- **Backend:** Express.js API proxy (hides Gemini API key)
+- **AI:** Google Gemini 2.0 Flash model
+
+---
+
+## 📦 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/icook.git
+cd icook
+```
+
+## Install dependencies
+```
+npm install
+```
+
+## ⚙️ Setup
+Create a .env file in the project root:
+
+```
+GEMINI_API_KEY=your_gemini_api_key_here
+PORT=5174
+```
+
+- Note: Do not commit your .env file to version control.
+
+## 🚀 Running the App
+Run the backend proxy:
+
+```
+npm run server
+```
+
+Run the frontend:
+```
+npm run dev
+```
+
+Or run both together:
+```
+npm run dev:all
+```
+
+- Open in your browser:
+http://localhost:5173
+
+## 🧩 API Usage
+
+All requests are routed through the /api/recipe endpoint on the backend.
+The backend sends a structured prompt to Gemini and formats the AI’s JSON response.
+
+## 📜 License
+
+MIT License — free to use and modify.
+
+❤️ Credits
+
+Built with ☕ and 🍳 by R.Maunick
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Lovable project
 
 ## Project info
 
